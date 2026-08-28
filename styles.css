@@ -1,0 +1,379 @@
+/* ================================
+   GENERAL PAGE STYLING
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9eef3;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 275px;
+
+    background-color: #810202;
+
+    border-radius: 12px 12px 0 0;
+
+    margin-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 380px;
+
+    overflow: visible;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+}
+
+
+/* ================================
+   PROFILE IMAGE
+================================ */
+
+.hero-image {
+    position: absolute;
+
+    left: 50px;
+    bottom: -25px;
+
+    width: 250px;
+    height: 250px;
+
+    background-color: rgb(255, 255, 255);
+
+    padding: 8px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    border-radius: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border: none;
+
+    margin: 0;
+    border-radius: 50%;
+}
+
+
+/* ================================
+   HERO CONTENT
+================================ */
+
+.hero-content {
+    color: white;
+}
+
+.hero-content h1 {
+    color: white;
+
+    font-size: 42px;
+
+    margin: 0 0 5px 0;
+
+    text-align: left;
+}
+
+.hero-content p {
+    font-size: 17px;
+
+    margin: 0 0 25px 0;
+
+    color: white;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 11px 25px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+
+/* CV BUTTON */
+
+.cv-btn {
+    background-color: #c82b20;
+    color: white;
+}
+
+.cv-btn:hover {
+    background-color: #ad6220;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   HIRE BUTTON
+================================ */
+
+.hire-btn {
+    background-color: #c82b20;
+    color: white;
+}
+
+.hire-btn:hover {
+    background-color: #ad6220;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #410009;
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 35px;
+    margin-bottom: 35px;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+/* LOGO */
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.nav-links a:hover {
+    background-color: #374151;
+    color: #60a5fa;
+}
+
+
+/* ================================
+   SECTION CONTAINERS
+================================ */
+
+body > div {
+    background-color: white !important;
+
+    padding: 25px !important;
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   SECTION HEADINGS
+================================ */
+
+h2 {
+    color: #410009;
+    border-bottom: 2px solid #810202;
+
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+/* ================================
+   PROFILE IMAGE
+================================ */
+
+img {
+    display: block;
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid #60a5fa;
+
+    margin-bottom: 20px;
+}
+
+/* ================================
+   PERSONAL INFORMATION
+================================ */
+
+.cards-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 40px !important;
+    align-items: stretch !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+.info-card,
+.about-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 100% !important;
+
+    padding: 30px !important;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* ================================
+   TABLE
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th {
+    background-color: #410009;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+tr:hover {
+    background-color: #e5e7eb;
+}
+
+/* ================================
+   LISTS
+================================ */
+
+ol,
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        padding: 8px 12px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
