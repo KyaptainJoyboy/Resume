@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>RESUME - BUNAGAN</title>
 
 </head>
@@ -12,13 +13,14 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">My Resume</div>
+        <div class="logo"> <img src="images/sace.png" alt="Kian Bunagan" class="logo-img"> <span>My Resume</span></div>
 
         <ul class="nav-links">
             <li><a href="#personal-info">Personal</a></li>
             <li><a href="#educational-background">Educational</a></li>
             <li><a href="#professional-background">Professional</a></li>
-            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#credentials">Achievement</a></li>
+            <li><a href="#gallery">Gallery</a></li>
         </ul>
     </nav>
 
@@ -33,17 +35,23 @@
             <p>Computer Engineering Student & Web Developer</p>
 
             <div class="hero-buttons">
-                <a href="https://github.com/KyaptainJoyboy" class="btn cv-btn">Github Profile</a>
-                <a href="https://www.linkedin.com/in/kian-clarel-b-2044b3360/" class="btn hire-btn">LinkedIn</a>
+                <a href="https://github.com/KyaptainJoyboy" class="btn cv-btn">
+                    <i class="fa-brands fa-github"></i>
+                    Github Profile
+                </a>
+
+                <a href="https://www.linkedin.com/in/kian-clarel-b-2044b3360/" class="btn cv-btn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
             </div>
-        </div>
 
     </section>
 
-    <div class="cards-container">
+    <div class="cards-container" id="personal-info">
 
         <div class="info-card">
-            <h2>Personal Information</h2>
+            <h2><i class="fa-solid fa-circle-user cont-icon"></i> Personal Information</h2>
 
             <p><strong>Name:</strong> Kian Clarel Ramirez Bunagan</p>
             <p><strong>Age:</strong> 19</p>
@@ -60,7 +68,8 @@
 
 
         <div class="about-card">
-            <h2>About Me</h2>
+            <h2><i class="fa-solid fa-address-card cont-icon"></i> About Me</h2>
+
 
             <p>
                 I am Kian Clarel Ramirez Bunagan, a Computer Engineering student
@@ -95,7 +104,7 @@
     <br>
 
     <div id="educational-background">
-        <h2>Educational Background</h2>
+        <h2><i class="fa-solid fa-graduation-cap cont-icon"></i> Educational Background</h2>
         <table border="1" cellpadding="5" cellspacing="0">
             <tr>
                 <th>School</th>
@@ -128,7 +137,7 @@
     <br>
 
     <div id="professional-background">
-        <h2>Professional Background</h2>
+        <h2><i class="fa-solid fa-briefcase cont-icon"></i> Professional Background</h2>
         <table border="1" cellpadding="5" cellspacing="0">
             <tr>
                 <th>Organization</th>
@@ -161,26 +170,72 @@
     <br>
 
     <div id="credentials">
-        <h2>Credentials</h2>
+        <h2><i class="fa-solid fa-award cont-icon"></i> Achievements</h2>
         <ol>
-            <li><i>CSS NCII Certified</i></li>
+            <li><i>TESDA NCII Computer Systems Servicing Certified</i></li>
             <li><i>CSE - Professional Eligible (SANAA)</i></li>
+            <li><i>ISEC 2025 - Top Innovator</i></li>
+            <li><i>ICIA 2024 - Gold Medalist (Glucobot)</i></li>
+            <li><i>ICIA 2025 - Silver Medalist (Lifeline)</i></li>
+            <li><i>ICIA 2025 - Gold Medalist (Lifeline)</i></li>
+            <li><i>61st Foundation Days Debate Cup - 2x Best Debater</i></li>
+            <li><i>61st Foundation Days Debate Cup - Bronze Medalist</i></li>
         </ol>
     </div>
 
     <br>
 
     <div id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Communication Skills</li>
-            <li>Soft Programming</li>
-            <li>Management Skills</li>
-            <li>Documents Handling</li>
-            <li>Computer Skills</li>
-            <li>Networking</li>
-            <li>Graphic Design</li>
+        <h2><i class="fa-solid fa-lightbulb cont-icon"></i> Skills</h2>
+        <ul class="flex-list">
+            <li class="btn hire-btn">Communication Skills</li>
+            <li class="btn hire-btn">Soft Programming</li>
+            <li class="btn hire-btn">Management Skills</li>
+            <li class="btn hire-btn">Documents Handling</li>
+            <li class="btn hire-btn">Computer Skills</li>
+            <li class="btn hire-btn">Networking</li>
+            <li class="btn hire-btn">Graphic Design</li>
         </ul>
+    </div>
+
+    <div id="gallery" class="gallery-section">
+        <h2><i class="fa-solid fa-images cont-icon"></i> Image Gallery</h2>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="images/isec.jpg" alt="Kian">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-award"></i>
+                    <span>ISEC</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/lifeline.jpg" alt="Project">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span>LIFELINE</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/vietnam.jpg" alt="Achievement">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-award"></i>
+                    <span>VIETNAM</span>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/lala.jpg" alt="Activity">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-award"></i>
+                    <span>NCIA</span>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>
